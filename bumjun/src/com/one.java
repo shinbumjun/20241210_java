@@ -3,45 +3,45 @@ package com;
 import java.util.Scanner;
 
 /*
- 	- ÀÔ·Â°ª
-    - ³»°¡ ÁÁ¾ÆÇÏ´Â ¿ä¸® Á¦¸ñÀ» ¸ÕÀú ÀÔ·ÂÇÕ´Ï´Ù.
-    - ¿ä¸® º°Á¡À» 1~5 »çÀÌÀÇ ¼Ò¼öÁ¡ÀÌ ÀÖ´Â ½Ç¼ö·Î ÀÔ·ÂÇØ ÁÖ¼¼¿ä. (ex. 3.5)
-    - ÀÌ¾î¼­ ³»°¡ ÁÁ¾ÆÇÏ´Â ¿ä¸® ·¹½ÃÇÇ¸¦ ÇÑ ¹®Àå¾¿ 3¹®ÀåÀ» ÀÔ·ÂÇÕ´Ï´Ù.
-	- Ãâ·Â°ª
-    - ÀÔ·ÂÀÌ Á¾·áµÇ¸é ¿ä¸® Á¦¸ñÀ» °ýÈ£·Î °¨½Î¼­ ¸ÕÀú Ãâ·ÂÇØ ÁÝ´Ï´Ù.
-    - ÀÌ¾î¼­, ¿ä¸® º°Á¡À» ¼Ò¼öÁ¡À» Á¦¿ÜÇÑ Á¤¼ö·Î¸¸ Ãâ·ÂÇØ ÁÝ´Ï´Ù. (ex. 3)
-    - ¹Ù·Î µÚ¿¡ Á¤¼ö º°Á¡À» 5Á¡ ¸¸Á¡ ÆÛ¼¾Æ®·Î Ç¥ÇöÇßÀ» ¶§ °ªÀ» ½Ç¼ö·Î Ãâ·ÂÇØ ÁÝ´Ï´Ù. (ex. 60.0%)
-    - ÀÌ¾î¼­, ÀÔ·ÂÇÑ ¸ðµç ¹®Àå ¾Õ¿¡ ¹øÈ£¸¦ ºÙ¿©¼­ ¸ðµÎ Ãâ·ÂÇØ ÁÝ´Ï´Ù. 
+ 	- ìž…ë ¥ê°’
+    - ë‚´ê°€ ì¢‹ì•„í•˜ëŠ” ìš”ë¦¬ ì œëª©ì„ ë¨¼ì € ìž…ë ¥í•©ë‹ˆë‹¤.
+    - ìš”ë¦¬ ë³„ì ì„ 1~5 ì‚¬ì´ì˜ ì†Œìˆ˜ì ì´ ìžˆëŠ” ì‹¤ìˆ˜ë¡œ ìž…ë ¥í•´ ì£¼ì„¸ìš”. (ex. 3.5)
+    - ì´ì–´ì„œ ë‚´ê°€ ì¢‹ì•„í•˜ëŠ” ìš”ë¦¬ ë ˆì‹œí”¼ë¥¼ í•œ ë¬¸ìž¥ì”© 3ë¬¸ìž¥ì„ ìž…ë ¥í•©ë‹ˆë‹¤.
+	- ì¶œë ¥ê°’
+    - ìž…ë ¥ì´ ì¢…ë£Œë˜ë©´ ìš”ë¦¬ ì œëª©ì„ ê´„í˜¸ë¡œ ê°ì‹¸ì„œ ë¨¼ì € ì¶œë ¥í•´ ì¤ë‹ˆë‹¤.
+    - ì´ì–´ì„œ, ìš”ë¦¬ ë³„ì ì„ ì†Œìˆ˜ì ì„ ì œì™¸í•œ ì •ìˆ˜ë¡œë§Œ ì¶œë ¥í•´ ì¤ë‹ˆë‹¤. (ex. 3)
+    - ë°”ë¡œ ë’¤ì— ì •ìˆ˜ ë³„ì ì„ 5ì  ë§Œì  í¼ì„¼íŠ¸ë¡œ í‘œí˜„í–ˆì„ ë•Œ ê°’ì„ ì‹¤ìˆ˜ë¡œ ì¶œë ¥í•´ ì¤ë‹ˆë‹¤. (ex. 60.0%)
+    - ì´ì–´ì„œ, ìž…ë ¥í•œ ëª¨ë“  ë¬¸ìž¥ ì•žì— ë²ˆí˜¸ë¥¼ ë¶™ì—¬ì„œ ëª¨ë‘ ì¶œë ¥í•´ ì¤ë‹ˆë‹¤. 
  */
 public class one {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("³»°¡ ÁÁ¾ÆÇÏ´Â ¿ä¸® Á¦¸ñ : ");
+		System.out.print("ë‚´ê°€ ì¢‹ì•„í•˜ëŠ” ìš”ë¦¬ ì œëª© : ");
 		String title = sc.nextLine();
 		
-		System.out.print("¿ä¸® º°Á¡: ");
+		System.out.print("ìš”ë¦¬ ë³„ì : ");
 		double rating = sc.nextDouble();
 		
-		sc.nextLine(); // ***¹öÆÛ ºñ¿ì±â : ÁÙ¹Ù²Þ ¹®ÀÚ(\n) Á¦°Å
+		sc.nextLine(); // ***ë²„í¼ ë¹„ìš°ê¸° : ì¤„ë°”ê¿ˆ ë¬¸ìž(\n) ì œê±°
 		
-		System.out.println("¿ä¸® ·¹½ÃÇÇ¸¦ ÇÑ ¹®Àå¾¿ 2¹®Àå ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.println("ìš”ë¦¬ ë ˆì‹œí”¼ë¥¼ í•œ ë¬¸ìž¥ì”© 2ë¬¸ìž¥ ìž…ë ¥í•˜ì„¸ìš”: ");
 		String [] recipeSteps = new String[3];
 		int num = 0;
 		for(int i = 0; i < 3; i++) {
 			num++;
-			System.out.print((i + 1) + "¹øÂ° ¹®Àå: ");
+			System.out.print((i + 1) + "ë²ˆì§¸ ë¬¸ìž¥: ");
 			recipeSteps[i] = sc.nextLine();
 		}
 		
-		System.out.println("¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ Ãâ·Â °á°ú ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ");
+		System.out.println("ã…¡ã…¡ã…¡ã…¡ã…¡ ì¶œë ¥ ê²°ê³¼ ã…¡ã…¡ã…¡ã…¡ã…¡");
 		System.out.println("(" + title + ")");
-		int rating2 = (int)rating; // Å« ¼ö¿¡¼­ ÀÛÀº ¼ö (°­Á¦ Çüº¯È¯)
+		int rating2 = (int)rating; // í° ìˆ˜ì—ì„œ ìž‘ì€ ìˆ˜ (ê°•ì œ í˜•ë³€í™˜)
 		double rating3 = (rating / 5) * 100;
-		System.out.printf("º°Á¡: %dÁ¡ (%.1f%%)%n", rating2, rating3);
+		System.out.printf("ë³„ì : %dì  (%.1f%%)%n", rating2, rating3);
 		
-		System.out.println("¿ä¸® ·¹½ÃÇÇ: ");
+		System.out.println("ìš”ë¦¬ ë ˆì‹œí”¼: ");
 		for(int i = 0; i < recipeSteps.length; i++) {
 			System.out.println((i + 1) + ". " + recipeSteps[i]);
 		}
